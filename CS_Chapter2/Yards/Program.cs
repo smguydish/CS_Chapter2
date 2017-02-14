@@ -11,9 +11,11 @@ namespace Yards
         {
             int length = 25;     
             int width = 42;
-            int area = ((length * width)/ 9;
+            int area = ((length * width)/ 9);
             double cost = (area * 1.50);
-            Console.WriteLine("The cost of " + area + " yards, is " + cost );
+            string conversion;
+            conversion = cost.ToString("C");
+            Console.WriteLine("The cost of " + area + " yards, is " + conversion);
         }
     }
 }
